@@ -1,9 +1,9 @@
-import '../css/style.css'
+ import '../css/style.css'
 
 /* selecionar os elementos do DOM */
 const inputPesquisa = document.querySelector('#inputPesquisa')
 const btnLocalizar = document.querySelector('#btnLocalizar')
-const pokedexDisplay = document.querySelector('display')
+const pokedexDisplay = document.querySelector('#display')
 
 /* adicionando os eventos */
 btnLocalizar.addEventListener('click', async function(){
@@ -11,7 +11,7 @@ btnLocalizar.addEventListener('click', async function(){
      const dadosDoPokemon = await localizaPokemon(inputPesquisa.value)
 
     /* criar o cartao do pokemon */
-    criarCartao()
+    criarCartao(dadosDoPokemon)
 })
 
 async function localizaPokemon(termoBusca){
