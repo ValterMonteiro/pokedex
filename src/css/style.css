@@ -39,7 +39,7 @@ header img{
     align-items: center;
     gap: 20px;
     width: 50%;
-    background-color: azure;
+    background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
 
 }
 .formLocalizar input{
@@ -58,4 +58,26 @@ header img{
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.cartaoPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    height: 100%;
+    text-align: center;
+}
+.pokemonSprite{
+    height: 50%;
+}
+.pokemonTitle{
+    width: 50%;
+    height: 25%;
+}
+.cartaoPokemon h2{
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    letter-spacing: 6px;
 }

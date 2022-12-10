@@ -28,10 +28,13 @@ function criarCartao(pokemon){
     const cartaoPokemon = document.createElement('div')
     cartaoPokemon.className='cartaoPokemon'
     cartaoPokemon.innerHTML = `
-        <img class="pokemonSprite" src="${pokemon.sprites.front_default}"/>
+        <img class="pokemonTitle" src="./src/img/pokemon.png" alt="">
+        <img class="pokemonSprite" src="${pokemon.sprites.other.dream_world.front_default}"/>
         <h2>${pokemon.name}<h2/>
+        <h2>${pokemon.id}<h2/>
     `
-
+    /* limpando antes de inserir */
+    pokedexDisplay.innerHTML = ''
     /* adicionando ao display */
     pokedexDisplay.appendChild(cartaoPokemon)
 }
